@@ -66,6 +66,7 @@ healthcare-assistant/
     utils/
   data/
     chroma/
+  docs/
   samples/
   requirements.txt
   app.py
@@ -161,6 +162,12 @@ This populates:
 ```powershell
 streamlit run app.py
 ```
+
+## Documentation
+
+- [Requirements And Design Plan](G:/workspace/playground/healthcare-assistant/docs/requirements-and-design-plan.md)
+- [Solution Design](G:/workspace/playground/healthcare-assistant/docs/solution-design.md)
+- [Data Model And Agent Contracts](G:/workspace/playground/healthcare-assistant/docs/data-model-and-agent-contracts.md)
 
 ## How to Use the App
 
