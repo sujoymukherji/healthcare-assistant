@@ -156,26 +156,6 @@ This populates:
 - [healthcare_assistant.db](G:/workspace/playground/healthcare-assistant/data/healthcare_assistant.db)
 - [data/chroma](G:/workspace/playground/healthcare-assistant/data/chroma)
 
-If you only want to refresh the workbook-backed snapshot tables, you can still run:
-
-```powershell
-.\.venv\Scripts\python.exe -m app.services.bootstrap_workbook_database
-```
-
-## Run Smoke Tests
-
-### Ingestion smoke test
-
-```powershell
-.\.venv\Scripts\python.exe -m app.services.smoke_test_ingestion
-```
-
-### Chroma smoke test
-
-```powershell
-.\.venv\Scripts\python.exe -m app.services.smoke_test_chroma
-```
-
 ## Run the App
 
 ```powershell
@@ -276,7 +256,6 @@ Example requests:
 - [sample_data_repository.py](G:/workspace/playground/healthcare-assistant/app/repositories/sample_data_repository.py)
 - [local_database.py](G:/workspace/playground/healthcare-assistant/app/repositories/local_database.py)
 - [bootstrap_sample_database.py](G:/workspace/playground/healthcare-assistant/app/services/bootstrap_sample_database.py)
-- [bootstrap_workbook_database.py](G:/workspace/playground/healthcare-assistant/app/services/bootstrap_workbook_database.py)
 - [appointment_repository.py](G:/workspace/playground/healthcare-assistant/app/repositories/appointment_repository.py)
 - [chroma_ingestion.py](G:/workspace/playground/healthcare-assistant/app/services/chroma_ingestion.py)
 - [chroma_retrieval.py](G:/workspace/playground/healthcare-assistant/app/services/chroma_retrieval.py)
@@ -309,16 +288,10 @@ Additional notes:
 
 ### Chroma retrieval is empty
 
-Re-run the unified bootstrap or the Chroma smoke test:
+Re-run the unified bootstrap:
 
 ```powershell
 .\.venv\Scripts\python.exe -m app.services.bootstrap_sample_database
-```
-
-or:
-
-```powershell
-.\.venv\Scripts\python.exe -m app.services.smoke_test_chroma
 ```
 
 ### MedlinePlus or LangSmith requests fail
