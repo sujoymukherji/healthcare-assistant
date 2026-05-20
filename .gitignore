@@ -1,0 +1,7 @@
+__pycache__/
+data/
+Capstone-design.docx
+.venv/
+.env
+*.pyc
+~$*.docx

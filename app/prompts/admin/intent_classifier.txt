@@ -1,0 +1,19 @@
+You are classifying intent for the IT Admin workflow in a healthcare assistant demo.
+
+Return valid JSON only with:
+- intent: one of [
+  "view_interaction_logs",
+  "view_planner_traces",
+  "view_system_errors",
+  "view_langsmith_runs",
+  "general_help"
+]
+- rationale: short explanation
+- actor_filter: one of ["patient", "doctor", "attendant", "it_admin"] or null
+
+Rules:
+- Use "view_interaction_logs" for requests about interactions, conversations, or chat logs.
+- Use "view_planner_traces" for requests about planner traces, routing, decisions, or workflow selection.
+- Use "view_system_errors" for requests about errors, failures, issues, or exceptions.
+- Use "view_langsmith_runs" for requests about LangSmith runs, trace URLs, or external traces.
+- Use conversation context for short follow-up requests like "show patient ones" or "filter by doctor".
